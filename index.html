@@ -6,9 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>money-master</title>
+    <!-- telwien link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        input {
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+
+        button {
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+        }
+    </style>
 </head>
 
-<body>
+<body class="p-10">
+
+    <h1 class="text-6xl text-orange-400 text-center font-bold  mt-5">Money Master </h1>
+
+
+    <section class="grid  grid-cols-1 md:grid-cols-2  gap-5  m-20">
+        <div>
+            <img style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" class="object-contain rounded-2xl  h-full"
+                src="./beautiful-shiny-golden-egg-bird-nest-golden-egg-nest-generative-ai.jpg" alt="">
+        </div>
+        <div style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;"
+            class="ml-10 text-center bg-gray-400 p-10 rounded-2xl">
+            <h3 class="text-4xl">Income</h3><br>
+
+            <div class="flex gap-3 m-5">
+                <h3 class="text-5xl text-gray-950 ">Income:-</h3>
+                <input id="income_field" class="w-3/4 rounded-md" type="text">
+            </div>
+
+            <h3 class="text-4xl">Expenses</h3><br>
+            <div class="flex gap-3 m-5 p-5">
+                <h3 class="text-5xl text-gray-950 ">Food:-</h3>
+                <input class="w-3/4 rounded-md" id="Food_field" type="text">
+            </div>
+            <div class="flex gap-3 m-5 p-5">
+                <h3 class="text-5xl text-gray-950 ">Rent:-</h3>
+                <input class="w-3/4 rounded-md" id="Rent_field" type="text">
+            </div>
+            <div class="flex gap-3 m-5 p-5">
+                <h3 class="text-5xl text-gray-950 ">Clothes:-</h3>
+                <input class="w-3/4 rounded-md" id="Clothes_field" type="text">
+            </div>
+
+            <button id="Total_Calculate_btn"
+                class="p-4 bg-green-400 rounded-lg text-white hover:bg-green-600">Calculate</button>
+
+
+            <h2 class="text-3xl text-white">Total Expenses:=<span id="Total_Expenses"></span></h2>
+            <h2 class="text-3xl text-white">Balance:=<span id="Balance_Expenses"></span></h2>
+            <div class="flex gap-5 text-2xl mt-5 text-black">
+                <p>Save</p> <input id="Save_feild" class="h-12" type="text">
+                <p>%</p>
+                <button id="Mk_save" class="p-4 bg-green-400 rounded-lg text-white hover:bg-green-600">Save
+                </button>
+            </div>
+            <p class="text-center">Saving Amount:<span id="Save_amount_desplay"></span></p>
+            <p class="text-center">Remaining Balance:<span id="Remaining_desplay"></span></p>
+        </div>
+
+    </section>
+    <section>
+
+    </section>
 
 
 
